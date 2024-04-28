@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    background-color:#f9c4d7;
+}
+header {
+    background-color:#ff94bc;
+    padding: 7px 20px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo a{
+    color: white;
+    opacity: .9;
+    font-size: 50px;
+    font-weight:bold;
+    text-transform: capitalize;
+    margin-left: 55PX;
+    margin-right: 650PX;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 25px;
+}
+nav ul li a {
+  color: white;
+  opacity: .8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+a:hover {
+    color:#a9436d;
+}
+i{
+    color: #a9436d;
+    font-size: 40px;
+    margin: 10px;
+}
+i:hover{
+    color: white;
+    cursor: pointer;
+}
+.name{
+    font-size: 40px;
+    color:white;
+    font-weight: bold;
+    margin: 110px 0 0 650px;
+}
+.form{
+    margin-top: 300px ;
+    margin-left: 350px;
+}
+.form input{
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    width: 800px;
+    height: 100px;
+    border-radius: 20px;   
+}
+.form input:hover{
+    cursor: pointer;
+    transform: scale(1.2 ,1.2);
+    transition: .5s;
+}
+.form input::placeholder{
+    font-size: 30px;
+    padding-left: 270px;
+}
+.form button{
+    font-size:35px;
+    background-color:#a9436d;
+    border: none;
+    margin: 50px;
+    margin-left: 320px;
+    border-radius:10px;
+    color:white;
+    padding: 10px;
+}
+
+.form button:hover{
+    cursor: pointer;
+    transform: scale(1.1 , 1.1);
+    transition: .3s;
+}

@@ -105,11 +105,6 @@ a:hover {
 .login:hover{
 background-color:#65cfe7 ;
 }
-.theme2 i{
-    font-size: 30px;
-    margin-left: 200px;
-}
-
 .bod{ 
     background-image: url("./image/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove.jpg") ;
     background-size: cover;
@@ -172,10 +167,7 @@ background-color:#65cfe7 ;
     color:#E987CC;
     cursor: pointer;
 }
-.theme2 i{
-    font-size: 30px;
-    margin-left:100px;
-}
+
 .text {
     color: white;
     margin: 100px 100px 50px 20px;

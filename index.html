@@ -1,17 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>tswaq.com </title>
-    <link rel="stylesheet" href="./home2.css" > 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <script src="./index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bags Store</title>
 </head>
 
-<body class="bod" >
-  <header>
-  <a href="#" onclick="show()" class="fas fa-bars"></a>
-    <div class="logo"><a href="./index.html">tswaq</a></div>
+<body>
+    <header>
+        <i class="fas fa-bars" ></i>
+    <div class="logo"><a href='#' onclick="home()">tswaq</a></div>
     <nav class="link">
       <ul>
         <li><a href='index.html'>Home</a></li>
@@ -20,193 +22,210 @@
         <li class="login"><a href=''>log in</a></li>
         <li class="signup"><a href='./form.html'>sign up</a></li>
         <li class="theme2"><a href="#"><i class="fas fa-cog"></i></a></li>
-      </ul>
-      <ul  class="sidebar">
-          <li onclick="hide()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href='./index.html'>Home</a></li>
-            <li><a href=''>Feedback</a></li>
-            <li><a href=''>Complains</a></li>
-            <li ><a href=''>log in</a></li>
-            <li ><a href='./form.html'>sign up</a></li>
-        </ul>
+    </ul>
     </nav> 
-    
-  </header>
-  <div class="top">
-      <nav class="text">
-          <p class="one">online</p>
-          <p class="two">shopping</p>
-          <p class="three">find what you want</p>
-        </nav>
-        
+      </header>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/icon.png" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
         </div>
-        <div class="search">
-    <input type="text" id="input-box" placeholder="search">
-    <button type="submit" onclick="goButton()">Go</button>
-    <div class="result-box"></div>
-  </div>
-  
-  <style>
-    *{
-        list-style: none;
-    }
-    .search button:hover {
-      background-color: white;
-      color: #1298B7;
-      cursor: pointer;
-    }
-  
-    .result-box {
-      width: 40%;
-      background-color: #1298B7;
-      border-radius: 20px;
-    }
-  
-    .result-box ul {
-      margin-left: 30px;
-      padding-bottom: 10px;
-    }
-  
-    .result-box ul li {
-      font-size: 18px;
-      padding: 10px;
-      color: white;
-    }
-  
-    .result-box ul li:hover {
-      cursor: pointer;
-      background-color: #27303b;
-    }
-  </style>
-  
-  <script>
-    let availableKeywords = [ // Use camelCase for variable names
-      'clothes',
-      'shoes',
-      'skin care',
-      'supermarket',
-      'electronics devices',
-      'electricity',
-      'medical devices',
-      'books',
-    ];
-  
-    const resultBox = document.querySelector(".result-box");
-    const inputBox = document.getElementById("input-box");
-  
-    inputBox.addEventListener('keyup', function() { // Use addEventListener for modern approach
-      let results = [];
-      let input = inputBox.value.toLowerCase();
-      if (input.length) {
-        results = availableKeywords.filter((keyword) => {
-          return keyword.toLowerCase().includes(input);
-        });
-        console.log(results);
-      }
-      display(results);
-      if (!results.length) {
-        resultBox.innerHTML = '';
-      }
-    });
-  
-    function display(results) {
-      const content = results.map((list) => {
-        return `<li onclick="selectInput(this)">${list}</li>`; // Use template literals for cleaner string construction
-      });
-      resultBox.innerHTML = "<ul>" + content.join('') + "</ul>";
-    }
-  
-    function selectInput(list) { // Use camelCase for function names
-      inputBox.value = list.textContent; // Use textContent for text value
-      resultBox.innerHTML = '';
-    }
-  
-    function goButton() {
-      let search = inputBox.value.toLowerCase();
-      if (search.includes('clothes')) {
-        window.location.href = "file:///C:/clothes%20part/men%20part.html";
-      } else if (search.includes('skin care')) {
-        window.location.href = "file:///C:/html/html%20project/project%201/index.html";
-      }
-    }
-  </script>
-    <div class="category">
-    <div class="centre">
-      <p>sections</p>
-      <div class="sections">
-        <div class="section">
-          <img  src="./image/clothes-hanger_2357127.png">
-          <h3><a href="">clothes section</a></h3>
+        <div class="navBottom">
+            <h3 class="menuItem">LOUIS VUITTON</h3>
+            <h3 class="menuItem">GUCCI</h3>
+            <h3 class="menuItem">DIOR</h3>
+            <h3 class="menuItem">BELENCIAGA</h3>
+            <h3 class="menuItem">JW ANDERSON</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/louis 1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LOUIS VUITTON</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/gucci 1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle"> GUCCI</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/DIOR.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DIOR</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/BELENCIAGA.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BELENCIAGA</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/JW ANDERSON.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">JW ANDERSON</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
 
+    <div class="product" id="product">
+        <img src="./img/louis 1.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">LOUIS VUITTON</h1>
+            <h2 class="productPrice">$199</h2>
+            <p class="productDesc">Your bag becomes an extension of your identity, reflecting your unique personality and taste. It becomes a part of your signature style, making you instantly recognizable.</p>
+           
+            <button class="productButton">BUY NOW!</button>
         </div>
-          <div class="section">
-            <img src="./image/responsive_2777213.png">
-            <h3><a href="">electronics section</a></h3>
-
-          </div>
-          <div class="section">
-            <img src="./image/shoes_11486665.png">
-            <h3><a href="">shoes section</a></h3>
-
-          </div><div class="section">
-            <img  src="./image/skincare_2763410.png">
-            <h3><a href="">skin care section</a></h3>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Mazen Reda" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Helwan univrsity" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
         </div>
-         <div class="section">
-            <img  src="./image/shopping-bag_3514242.png">
-            <h3><a href="">supermarket section</a></h3>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="./img/wo1.png"
+                alt="" class="galleryImg">
         </div>
-        <div class="section">
-            <img  src="./image/washing-machine_3003984.png">
-            <h3><a href="">electricity section</a></h3>
+        <div class="galleryItem">
+            <img src="./img/wo2.jpeg"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
         </div>
-        <div class="section">
-          <img  src="./image/books_10105177.png">
-          <h3><a href="">Books section</a></h3>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="./img/man1.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="./img/man 2.jpg"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="./img/man 3.jpg"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer >
+        <div class="foote">
+        <div class="end">
+            <p>&copy; All right reserved</p>
+        </div>
+        <div class="ppp">
+        <div class="icons3">
+        <div class="section3">
+          <img src="./img/facebook.png">
+          <p><a href="#">tswaq.facebook.com</a></p>
+        </div>
+      <div class="section3">
+        <img src="./img/instagram.png">
+        <p><a href="#">tswaq.intagram.com</a></p>
+      </div> 
+      <div class="section3">
+        <img src="./img/whatsapp.png">
+        <p><a href="#">tswaq.whatsapp.com</a></p>
       </div>
-      <div class="section">
-        <img  src="./image/ecg-monitor_6552284.png">
-        <h3><a href="">medica devices section</a></h3>
     </div>
+      <div class="icons4">
+        <div class="section4">
+          <img src="./img/phone 1.jpg">
+          <p>01265478591</p>
+        </div>
+        <div class="section4">
+          <img src="./img/phone 2.jpg">
+          <p>01239547864</p>
+        </div>
+        <div class="section4">
+          <img src="./img/telephone.jpg">
+          <p>0236578864</p>
+        </div>
       </div>
-  </div>
-</div>
-<footer >
-    <div class="foote">
-    <div class="end">
-        <p>&copy; All right reserved</p>
-    </div>
-    <div class="ppp">
-    <div class="icons3">
-    <div class="section3">
-      <img src="./image/facebook_2168281.png">
-      <p><a href="#">tswaq.facebook.com</a></p>
-    </div>
-  <div class="section3">
-    <img src="./image/instagram_717392.png">
-    <p><a href="#">tswaq.intagram.com</a></p>
-  </div> 
-  <div class="section3">
-    <img src="./image/whatsapp_1384007.png">
-    <p><a href="#">tswaq.whatsapp.com</a></p>
-  </div>
-</div>
-  <div class="icons4">
-    <div class="section4">
-      <img src="./image/telephone-call_3059502.png">
-      <p>01265478591</p>
-    </div>
-    <div class="section4">
-      <img src="./image/telephone-call_3059502.png">
-      <p>01239547864</p>
-    </div>
-    <div class="section4">
-      <img src="./image/old-typical-phone_13936.png">
-      <p>0236578864</p>
-    </div>
-  </div>
-    </div>
-    </div>
-</footer>
+        </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
 </body>
+
 </html>

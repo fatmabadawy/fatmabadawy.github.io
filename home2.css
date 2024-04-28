@@ -25,7 +25,7 @@ header {
     font-weight:bold;
     text-transform: capitalize;
     margin-left: 50PX;
-    margin-right: 700PX;
+    margin-right: 400PX;
     text-decoration: none;
     
 }
@@ -47,6 +47,9 @@ a:hover {
     color:#d86d95;
     transition: 0s;
     border-radius: 10px;
+}
+.theme2 i{
+    font-size: 30px;
 }
 
 .sidebar{

@@ -25,7 +25,7 @@ header {
     font-weight:bold;
     text-transform: capitalize;
     margin-left: 50PX;
-    margin-right: 700PX;
+    margin-right: 600PX;
     text-decoration: none;
     
 }
@@ -167,7 +167,7 @@ a:hover {
 }
 .theme2 i{
     font-size: 30px;
-    margin-left:40px;
+    margin-left:100px;
 }
 .text {
     color: white;

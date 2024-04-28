@@ -161,8 +161,13 @@ a:hover {
     text-transform: capitalize;
     color: white;
 }
+.section h3 a:hover{
+    color:#E987CC;
+    cursor: pointer;
+}
 .theme2 i{
     font-size: 30px;
+    margin-left:40px;
 }
 .text {
     color: white;

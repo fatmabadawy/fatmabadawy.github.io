@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tswaq.com </title>
+    <!-- <link rel="stylesheet" href="style theme 1.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+</head>
+
+<body class="body1">  
+  <header>
+        <i class="fas fa-bars" ></i>
+    <div class="logo"><a href='index.html'>tswaq</a></div>
+    <nav class="link">
+        <ul>
+            <li><a href='#' onclick="home()">Home</a></li>
+            <li><a href='#'>About us</a></li>
+            <li><a href="#">complains</a></li>
+            <li><a href='feedback theme1.html'>Feedback</a></li>
+            <li class="theme2"><a href="#" onclick="theme2()"><i class="fas fa-cog"></i></a></li>
+        </ul>
+    </nav>
+  </header>
+    <div class="top">
+        <nav class="text">
+            <p class="one">online</p>
+            <p class="two">shopping</p>
+            <p class="three">find what you want</p>
+        </nav>
+    </div>
+    <div class="search">
+      <input type="text" id="input-box" placeholder="search">
+      <button type="submit" onclick="goButton()">Go</button>
+      <div class="result-box"></div>
+    </div>
+    
+    <style>
+      *{
+          list-style: none;
+      }
+      .search button:hover {
+        background-color: white;
+        color: #1298B7;
+        cursor: pointer;
+      }
+    
+      .result-box {
+        width: 40%;
+        background-color: #1298B7;
+        border-radius: 20px;
+      }
+    
+      .result-box ul {
+        margin-left: 30px;
+        padding-bottom: 10px;
+      }
+    
+      .result-box ul li {
+        font-size: 18px;
+        padding: 10px;
+        color: white;
+      }
+    
+      .result-box ul li:hover {
+        cursor: pointer;
+        background-color: #27303b;
+      }
+    </style>
+    
+    <script>
+      let availableKeywords = [ // Use camelCase for variable names
+        'clothes',
+        'shoes',
+        'skin care',
+        'supermarket',
+        'electronics devices',
+        'electricity',
+        'medical devices',
+        'books',
+      ];
+    
+      const resultBox = document.querySelector(".result-box");
+      const inputBox = document.getElementById("input-box");
+    
+      inputBox.addEventListener('keyup', function() { // Use addEventListener for modern approach
+        let results = [];
+        let input = inputBox.value.toLowerCase();
+        if (input.length) {
+          results = availableKeywords.filter((keyword) => {
+            return keyword.toLowerCase().includes(input);
+          });
+          console.log(results);
+        }
+        display(results);
+        if (!results.length) {
+          resultBox.innerHTML = '';
+        }
+      });
+    
+      function display(results) {
+        const content = results.map((list) => {
+          return `<li onclick="selectInput(this)">${list}</li>`; // Use template literals for cleaner string construction
+        });
+        resultBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+      }
+    
+      function selectInput(list) { // Use camelCase for function names
+        inputBox.value = list.textContent; // Use textContent for text value
+        resultBox.innerHTML = '';
+      }
+    
+      function goButton() {
+        let search = inputBox.value.toLowerCase();
+        if (search.includes('clothes')) {
+          window.location.href = "file:///C:/clothes%20part/men%20part.html";
+        } else if (search.includes('skin care')) {
+          window.location.href = "file:///C:/html/html%20project/project%201/index.html";
+        }
+      }
+    </script>
+    <div class="sections">
+        <div class="section3">
+            <a href="\clothes part\men part.html"><img src="C:\html\icons\clothes-hanger_2357127.png"></a>
+            <p><a href="\clothes part\men part.html">clothes section</a></p> 
+        </div>
+        <div class="section3">
+            <a href="#"><img src="C:\html\icons\shoes_11486665.png"></a>
+            <p><a href="#">shoes section</a></p>
+        </div>
+        <div class="section3">
+            <a href="C:\html\html project\project 1\skin care.html"><img src="icons/skincare_2763410.png"></a>
+            <p><a href="C:\html\html project\project 1\skin care.html">skin care section</a></p>
+        </div>
+        <div class="section">
+            <img src="icons/responsive_2777213.png">
+            <p><a href="">electronics section</a></p>
+        </div>
+        <div class="section">
+            <img src="icons/washing-machine_3003984.png">
+            <p><a href="">electricity devices section</a></p>
+        </div>
+        <div class="section">
+            <img src="icons/shopping-bag_3514242.png">
+            <p><a href="">supermarket section</a></p>
+        </div>
+        <div class="section">
+            <img src="icons\books_10105177.png">
+            <p><a href="">books section</a></p>
+        </div>
+        <div class="section">
+            <img src="icons\ecg-monitor_6552284.png">
+            <p><a href="">medical devices</a></p>
+        </div>
+    </div>
+    <footer id="footer theme1" >
+        <div class="footer">
+        <div class="end">
+            <p>&copy; All right reserved</p>
+        </div>
+        <div class="icons1">
+        <div class="section1">
+          <img src="icons\facebook_2168281.png">
+          <p><a href="#">tswaq.facebook.com</a></p>
+        </div>
+      <div class="section1">
+        <img src="icons\instagram_717392.png">
+        <p><a href="#">tswaq.intagram.com</a></p>
+      </div> 
+      <div class="section1">
+        <img src="icons\whatsapp_1384007.png">
+        <p><a href="#">tswaq.whatsapp.com</a></p>
+      </div>
+    </div>
+      <div class="icons2">
+        <div class="section2">
+          <img src="icons\telephone-call_3059561.png">
+          <p>01265478591</p>
+        </div>
+        <div class="section2">
+          <img src="icons\telephone-call_3059561.png">
+          <p>01239547864</p>
+        </div>
+        <div class="section2">
+          <img src="icons\old-typical-phone_13936.png">
+          <p>0236578864</p>
+        </div>
+      </div>
+        </div>
+    </footer>
+    <!-- <script src="ros.js"></script> -->
+</body>

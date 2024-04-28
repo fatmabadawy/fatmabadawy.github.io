@@ -103,7 +103,7 @@ a:hover {
 }
 
 
-.bod{ 
+.body{ 
     background-image: url("./image/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -202,7 +202,11 @@ a:hover {
     color: antiquewhite;
     font-size: 17px;
 }
-
+.search button:hover {
+    background-color: white;
+    color:#1298B7 ;
+    cursor: pointer;
+}
 
 .result-box{
     width: 40%;

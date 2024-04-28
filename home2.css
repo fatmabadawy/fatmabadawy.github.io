@@ -86,9 +86,9 @@ a:hover {
     position: absolute;
     background-color:#d86d95;
     padding:10px 35px 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     top:7px;
-    right: 81px;
+    right: 140px;
     color: white;
 }
 .signup{
@@ -97,12 +97,17 @@ a:hover {
     right: 27px;
     padding: 10px 10px 10px 8px;
     border: none;
-    border-radius: 20px;
+    right: 90px;
+    border-radius: 25px;
     background-color: #1298B7;
     
 }
-.login a:hover{
-color:#65cfe7 ;
+.login:hover{
+background-color:#65cfe7 ;
+}
+.theme2 i{
+    font-size: 30px;
+    margin-left: 200px;
 }
 
 .bod{ 

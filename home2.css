@@ -156,7 +156,9 @@ a:hover {
     text-transform: capitalize;
     color: white;
 }
-
+.theme2 i{
+    font-size: 30px;
+}
 .text {
     color: white;
     margin: 100px 100px 50px 20px;

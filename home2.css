@@ -101,7 +101,9 @@ a:hover {
     background-color: #1298B7;
     
 }
-
+.login a:hover{
+color:#65cfe7 ;
+}
 
 .bod{ 
     background-image: url("./image/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove.jpg") ;

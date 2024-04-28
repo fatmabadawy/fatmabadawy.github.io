@@ -191,9 +191,6 @@ a:hover {
     width:85%;
     height: 50px;
 }
-.search input::placeholder{
-    color: white;
-}
 .search button {
     padding: 17px; 
     border: none;
@@ -208,24 +205,6 @@ a:hover {
     cursor: pointer;
 }
 
-.result-box{
-    width: 40%;
-    background-color:#1298B7 ;
-    border-radius: 20px;
-}
-.result-box ul{
-    margin-left: 30px;
-    padding-bottom: 10px;
-}
-.result-box ul li{
-    font-size: 18px;
-    padding: 10px;
-    color: white;
-}
-.result-box ul li:hover{
-    cursor: pointer;
-    background-color: #27303b;
-}
 .footer{
     background-color:#ff94bbd6;
     height: 220px;

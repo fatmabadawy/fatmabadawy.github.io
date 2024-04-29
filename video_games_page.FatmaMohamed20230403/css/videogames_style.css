@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ff94bc;
+    padding: 7px 20px 10px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo a {
+    color: white;
+    opacity: .9;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d86d95;
+    transition: 0s;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    color: #ff66b3;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.banner {
+    background-image: url('https://wallpapercave.com/wp/wp6492963.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: left;
+    padding-left: 300px;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 20px;
+    max-width: 20%;
+    margin-left: 50px;
+    margin-right: auto;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    text-align: left;
+    margin: 0;
+    z-index: 1;
+}
+
+.banner p {
+    font-size: 16px;
+    position: absolute;
+    bottom: 450px;
+    left: 15px;
+}
+/* Light mode button styling */
+#theme-toggle {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    border: 2px solid #000000; /* Black border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+	margin-left: 1000px;
+}
+
+#theme-toggle:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+
+.products {
+    padding: 50px 0;
+    box-shadow: 0 0 60px rgba(255, 20, 147, 0.8);
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    padding: 0px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p.price {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-card a.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card a.btn:hover {
+    background-color: #555;
+}
+
+.product-info {
+    display: flex;
+    align-items: stretch;
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px;
+    height: auto;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-video {
+    width: auto;
+    max-width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.product-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#quick-view-image {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+#quick-view-video {
+    max-width: 100%;
+    max-height: 60vh;
+    margin-bottom: 20px;
+}
+
+#quick-view-title {
+    font-size: 30px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn {
+    background-color: #ff66b3;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: calc(100% - 20px);
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff3399;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff94bbd6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+    width: 100%;
+}
+
+.left-section {
+    flex-basis: 20%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.right-section {
+    flex-basis: 15%;
+    text-align: right;
+}
+
+.middle-section {
+    flex-basis: 15%;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icons .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icons p {
+    margin: 0;
+}
+
+a {
+    color: white;
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}

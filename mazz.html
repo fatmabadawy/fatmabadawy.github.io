@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bags Store</title>
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-bars" onclick="show()"></i>
+        <div class="logo"><a href='#' onclick="home()">tswaq</a></div>
+        <nav class="link">
+            <ul>
+                <li><a href='#' onclick="home()">Home</a></li>
+                <li><a href='#' onclick="feedback()">Feedback</a></li>
+                <li><a href='#' onclick="complains()">Complains</a></li>
+                <li class="login"><a href='#' onclick="login()">log in</a></li>
+                <li class="signup"><a href='#' onclick="signup()">sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/icon.png" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">LOUIS VUITTON</h3>
+            <h3 class="menuItem">GUCCI</h3>
+            <h3 class="menuItem">DIOR</h3>
+            <h3 class="menuItem">BELENCIAGA</h3>
+            <h3 class="menuItem">JW ANDERSON</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/louis 1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LOUIS VUITTON</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/gucci 1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle"> GUCCI</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/DIOR.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DIOR</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/BELENCIAGA.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BELENCIAGA</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/JW ANDERSON.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">JW ANDERSON</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="./img/louis 1.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">LOUIS VUITTON</h1>
+            <h2 class="productPrice">$199</h2>
+            <p class="productDesc">Your bag becomes an extension of your identity, reflecting your unique personality and taste. It becomes a part of your signature style, making you instantly recognizable.</p>
+
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Mazen Reda" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Helwan univrsity" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="./img/wo1.png" alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="./img/wo2.jpeg" alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="./img/man1.jpg" alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="./img/man 2.jpg" alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="./img/man 3.jpg" alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="foote">
+            <div class="end">
+                <p>&copy; All right reserved</p>
+            </div>
+            <div class="ppp">
+                <div class="icons3">
+                    <div class="section3">
+                        <img src="./img/facebook.png">
+                        <p><a href="#">tswaq.facebook.com</a></p>
+                    </div>
+                    <div class="section3">
+                        <img src="./img/instagram.png">
+                        <p><a href="#">tswaq.intagram.com</a></p>
+                    </div>
+                    <div class="section3">
+                        <img src="./img/whatsapp.png">
+                        <p><a href="#">tswaq.whatsapp.com</a></p>
+                    </div>
+                </div>
+                <div class="icons4">
+                    <div class="section4">
+                        <img src="./img/phone 1.jpg">
+                        <p>01265478591</p>
+                    </div>
+                    <div class="section4">
+                        <img src="./img/phone 2.jpg">
+                        <p>01239547864</p>
+                    </div>
+                    <div class="section4">
+                        <img src="./img/telephone.jpg">
+                        <p>0236578864</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

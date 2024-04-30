@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Details</title>
+	<link id="dark-theme" rel="stylesheet" href="css/page_details2_style.css">
+	<link id="light-theme" rel="stylesheet" href="css/page_details_style.css">
+
+</head>
+<body>
+    
+<header>
+    <i class="fas fa-bars" onclick="show()"></i>
+    <div class="logo"><a href="#" onclick="home()">tswaq</a></div>
+    <nav class="link">
+        <ul>
+            <li><a href='#' onclick="home()">Home</a></li>
+            <li><a href='#' onclick="feedback()">Feedback</a></li>
+            <li><a href='#' onclick="complains()">Complains</a></li>
+			<li><a href='#' onclick="login()">log in</a></li>
+			<li><a href='#' onclick="signup()">sign up</a></li>
+        </ul>
+    </nav> 
+</header>
+
+<main>
+    <div class="container">
+        <div class="shoe-details">
+            <div class="shoe-image">
+                <img src="" alt="Shoe Image" id="shoe-image"> 
+            </div>
+            <div class="shoe-info" id="shoe-info">
+                <h2 id="shoe-name"></h2>
+                <p class="description" id="shoe-description"></p>
+                <p class="price" id="shoe-price"></p>
+                <p><strong>Style:</strong> <span id="shoe-style"></span></p>
+                <p><strong>Color:</strong> <span id="shoe-color"></span></p>
+                <p><strong>Size:</strong> <span id="shoe-size"></span></p>
+                <p><strong>Rating:</strong> <span id="shoe-rating"></span> (based on <span id="rating-count"></span> ratings)</p>
+                <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+                <div class="social-share">
+            <h3>Social Media Links:</h3>
+            <ul class="social-media-list">
+                <li><a href="#" class="share-btn facebook">Facebook</a></li>
+                <li><a href="#" class="share-btn twitter">Twitter</a></li>
+                <li><a href="#" class="share-btn instagram">Instagram</a></li>
+            </ul>
+        </div>
+				<section class="comments">
+    <h2>Comments</h2>
+    <form id="comment-form">
+        <label for="comment-message">Add a comment:</label>
+        <textarea id="comment-message" name="comment-message" rows="4" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="comment-list" class="comment-list">
+        <!-- Comments will be dynamically added here -->
+    </div>
+</section>
+
+            </div>
+        </div>
+    </div>
+	
+</main>
+
+<section class="similar-products">
+    <div class="container">
+        <h2>Similar Products</h2>
+        <div class="similar-products-grid" id="similar-products-grid">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div class="left-section">
+            <div class="icons">
+
+                <div class="section">
+                    <img src="images/facebook_2168281.png" alt="Facebook Icon">
+                    <p><a href="#">tswaq.facebook.com</a></p>
+                </div>
+				
+                <div class="section">
+                    <img src="images/instagram_717392.png" alt="Instagram Icon">
+                    <p><a href="#">tswaq.instagram.com</a></p>
+                </div>
+                
+                <div class="section">
+                    <img src="images/whatsapp_1384007.png" alt="WhatsApp Icon">
+                    <p><a href="#">tswaq.whatsApp.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="middle-section">
+           
+            <p>&copy; All rights reserved.</p>
+        </div>
+        <div class="right-section">
+            <div class="icons">
+                
+                <div class="section">
+                    <img src="images/telephone-call_3059561.png" alt="Phone Icon">
+                    <p>01265478591</p>
+                </div>
+
+                <div class="section">
+                    <img src="images/telephone-call_3059561.png" alt="Phone Icon">
+                    <p>01239547864</p>
+                </div>
+				
+				<div class="section">
+                    <img src="images/old-typical-phone_13936.png" alt="Phone Icon">
+                    <p>0236578864</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/page_details.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

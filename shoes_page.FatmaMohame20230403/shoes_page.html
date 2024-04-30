@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoes page</title>
+	<link id="dark-theme" rel="stylesheet" href="css/shoes_page_style.css">
+    <link id="light-theme" rel="stylesheet" href="css/shoes_page2_style.css">
+	<script>
+        // JavaScript to set light theme as default when the page loads
+        window.addEventListener('load', function() {
+            var lightTheme = document.getElementById('dark-theme');
+            var darkTheme = document.getElementById('light-theme');
+            
+            lightTheme.disabled = false;
+            darkTheme.disabled = true;
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <i class="fas fa-bars" onclick="show()"></i>
+    <div class="logo"><a href="#" onclick="home()">tswaq</a></div>
+    <nav class="link">
+        <ul>
+            <li><a href='#' onclick="home()">Home</a></li>
+            <li><a href='#' onclick="feedback()">Feedback</a></li>
+            <li><a href='#' onclick="complains()">Complains</a></li>
+			<li><a href='#' onclick="login()">log in</a></li>
+			<li><a href='#' onclick="signup()">sign up</a></li>
+        </ul>
+    </nav> 
+</header>
+
+<main>
+    <div class="filter-wrapper">
+	<div class="filter-section" id="filterSection">
+        <input type="number" id="maxPrice" placeholder="Maximum price">
+        <label for="showOnSale"><input type="checkbox" id="showOnSale"> Show On Sale</label>
+        <label for="showHotOffer"><input type="checkbox" id="showHotOffer"> Show Hot Offer</label>
+        <button onclick="filterProducts()">Filter</button>
+		<button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    </div>
+	</div>
+    <div class="container">
+		<div class="product-grid">
+		
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=1">
+                    <img src="images/71fhq3hbcHL._AC_SY500_.jpg" alt="Product 1">
+                </a>
+                <h2>Ankle Boots</h2>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+			    <a href="shoe_details_page\page_details1.html?id=2">
+                    <img src="images/71no9GAWnAL._AC_SY395_.jpg" alt="Product 2">
+                </a>
+				<h2>Comfortable Skate Shoe</h2>
+                <p class="price">$23.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=3">
+    				<img src="images/71WCZ-pwx1L._AC_SY500_.jpg" alt="Product 3">
+                </a>
+				<h2>Floral Sneaker</h2>
+                <p class="price">$22.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=4">
+				    <img src="images/41Df-RFYS8L._AC_UF480,480_SR480,480_.jpg" alt="Product 4">
+                </a>
+				<h2>Tennis Shoes</h2>
+                <p class="price">$31.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+				<div class="sale-badge">On Sale</div>
+            </div>
+
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=5">
+    				<img src="images/81Tyzqb8lZL._AC_SY500_.jpg" alt="Product 5">
+                </a>
+				<h2>Espadrille Wedge Sandals</h2>
+                <p class="price">$40.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=6">
+    				<img src="images/41T+0ms--7L._AC_UF480,480_SR480,480_.jpg" alt="Product 6">
+                </a>
+				<h2>DREAM PAIRS Sandal</h2>
+                <p class="price">$36.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+				<div class="offer-badge">Hot Offer</div>
+            </div>
+            
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=7">
+					<img src="images/81lQKmPkLhL._AC_SY500_.jpg" alt="Product 7">
+                </a>
+				<h2>Floral Heels Sandals</h2>
+                <p class="price">$41.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+			
+			<div class="product">
+                <a href="shoe_details_page\page_details1.html?id=8">
+                    <img src="images/818pGCLddlL._AC_UF480,480_SR480,480_.jpg" alt="Product 1">
+                </a>
+                <h2>Fashion Tennis Shoe</h2>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+			    <a href="shoe_details_page\page_details1.html?id=9">
+                    <img src="images/31fm1s2zokL._AC_UF480,480_SR480,480_.jpg" alt="Product 2">
+                </a>
+				<h2>Shoes with Bow</h2>
+                <p class="price">$36.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+				<div class="sale-badge">On Sale</div>
+            </div>
+            
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=10">
+    				<img src="images/412Wgmnx7YL._AC_UF480,480_SR480,480_.jpg" alt="Product 3">
+                </a>
+				<h2>Slip On Canvas Shoes</h2>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+				<div class="sale-badge">On Sale</div>
+            </div>
+			
+			<div class="product">
+			    <a href="shoe_details_page\page_details1.html?id=11">
+                    <img src="images/41OKGEYy9sL._AC_UF480,480_SR480,480_.jpg" alt="Product 2">
+                </a>
+				<h2>Casual Walking Shoes</h2>
+                <p class="price">$25.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <a href="shoe_details_page\page_details1.html?id=12">
+    				<img src="images/41mDN7N1bYL._AC_UF480,480_SR480,480_.jpg" alt="Product 3">
+                </a>
+				<h2>Casual Flats</h2>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+		
+        </div>
+    </div>
+	 <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <table id="events-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Events will be populated here dynamically -->
+            </tbody>
+        </table>
+    </section>
+	
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="left-section">
+            <div class="icons">
+
+                <div class="section">
+                    <img src="images/facebook_2168281.png" alt="Facebook Icon">
+                    <p><a href="#">tswaq.facebook.com</a></p>
+                </div>
+				
+                <div class="section">
+                    <img src="images/instagram_717392.png" alt="Instagram Icon">
+                    <p><a href="#">tswaq.instagram.com</a></p>
+                </div>
+                
+                <div class="section">
+                    <img src="images/whatsapp_1384007.png" alt="WhatsApp Icon">
+                    <p><a href="#">tswaq.whatsApp.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="middle-section">
+           
+            <p>&copy; All rights reserved.</p>
+        </div>
+        <div class="right-section">
+            <div class="icons">
+                
+                <div class="section">
+                    <img src="images/telephone-call_3059561.png" alt="Phone Icon">
+                    <p>01265478591</p>
+                </div>
+
+                <div class="section">
+                    <img src="images/telephone-call_3059561.png" alt="Phone Icon">
+                    <p>01239547864</p>
+                </div>
+				
+				<div class="section">
+                    <img src="images/old-typical-phone_13936.png" alt="Phone Icon">
+                    <p>0236578864</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/shoes_page.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    background-color: #41414f; /* Updated background color */
+    color: #f5e1ed; /* Updated text color */
+}
+
+header {
+    background-color: #8fd2fa; /* Updated header background color */
+    padding: 7px 20px 10px;
+    display: flex;
+    align-items: center;
+    height: 67px; /* Adjusted height */
+    margin: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-grow: 1;
+    font-size: 40px; /* Adjusted font size */
+}
+
+.logo a {
+    color: #fff; /* Updated logo color */
+    opacity: .9;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: #fff; /* Updated nav item color */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff85a2; /* Updated hover color */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff85a2; /* Updated hover color */
+    transition: 0s;
+    border-radius: 10px;
+}
+/* Rest of the CSS remains unchanged */
